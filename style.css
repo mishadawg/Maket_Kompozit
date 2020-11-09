@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*OpenSansBold*/
+@font-face{
+    font-family: OpenSansBold;
+    src: url(./fonts/OpenSans-Bold.ttf);
+    
+}
+/*OpenSansCondBold*/
+@font-face{
+    font-family: OpenSansCondBold;
+    src: url(./fonts/OpenSans-CondBold.ttf); 
+}
+/*OpenSansCondLight*/
+@font-face{
+    font-family: OpenSansCondLight;
+    src: url(./fonts/OpenSans-CondLight.ttf); 
+}
+/*OpenSansCondLightItalic*/
+@font-face{
+    font-family: OpenSansCondLightItalic;
+    src: url(./fonts/OpenSans-CondLightItalic.ttf); 
+}
+/*OpenSansRegular*/
+@font-face{
+    font-family: OpenSansRegular;
+    src: url(./fonts/OpenSans-Regular.ttf); 
+}
+/*OpenSansSemiBold*/
+@font-face{
+    font-family: OpenSansSemiBold;
+    src: url(./fonts/open-sans-semibold_[allfont.ru].ttf); 
+}
+/*OpenSansSemiBoldItalic*/
+@font-face{
+    font-family: OpenSansSemiBoldItalic;
+    src: url(./fonts/open-sans-semibold-italic.ttf); 
+}
+
+/*Content sizing*/
+.content_sizing{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.kompozit_logo{
+    font-family: OpenSansBold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #00AEEF;
+    margin: 0px;
+}
+.logo_under{
+    font-family: OpenSansRegular; 
+    font-size: 11px;
+    color: #000000;
+    margin: 0px;
+}
+.navbar-brand{
+    margin-right: 210px;
+}
+.nav-item{
+    margin: 0px 24px;
+}
+.nav-link{
+    color: white;
+    font-family: OpenSansRegular;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #00AEEF;
+    border-radius: 6px;
+}
