@@ -47,6 +47,11 @@
 }
 
 /*Header*/
+.top_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
 .kompozit_logo{
     font-family: OpenSansBold;
     font-size: 30px;
@@ -60,17 +65,138 @@
     color: #000000;
     margin: 0px;
 }
-.navbar-brand{
-    margin-right: 210px;
-}
 .nav-item{
-    margin: 0px 24px;
+    margin: 16px 8px;
 }
 .nav-link{
+    text-transform: uppercase;
+    font-family: OpenSansRegular;
+    color: black;
+    font-size: 14px;
+    padding: .5rem 1.6rem;
+}
+.contact_pill{
     color: white;
+    background-color: #00AEEF;
+}
+.contact_pill:hover{
+    color: #00AEEF;
+    background-color: white;
+    border: 1px solid  #00AEEF;
+}
+.number{
+    font-family: OpenSansBold;
+}
+
+/*About*/
+.title_about{
+    text-align: center;
+    font-size: 34px;
+    font-family: OpenSansRegular;
+    margin-top: 94px;
+    margin-bottom: 52px;
+}
+.description_about{
+    text-indent: 16px;
+    font-family: OpenSansRegular;
+    margin-bottom: 98px;
+}
+
+/*Our_product*/
+.title_our_product{
+    text-align: center;
+    font-size: 34px;
+    font-family: OpenSansRegular;
+    margin-bottom: 56px;
+}
+.card_product{
+    text-align: center;
+}
+.title_of_card{
+    margin-bottom: 18px;
+    font-family: OpenSansRegular;
+    font-size: 18px;
+}
+.pill_for_product{
+    color: white;
+    background-color: #00AEEF;
+    text-align: center;
+    border-radius: .25rem;
     font-family: OpenSansRegular;
     font-size: 14px;
-    text-transform: uppercase;
-    background-color: #00AEEF;
-    border-radius: 6px;
+    padding: .5rem 1.6rem;
+}
+.pill_for_product:hover{
+    color: #00AEEF;
+    background-color: white;
+    border: 1px solid  #00AEEF;
+    text-decoration: none;
+}
+.image_card{
+    width: 100%;
+    height: 168px;
+}
+.container_cards{
+    margin-bottom: 36px;
+}
+.area_of_card{
+    height: 45%;
+    border: 1px solid #B7B7B7;
+    padding: 26px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Our_advantages*/
+.our_advantages{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title_of_advantages{
+    text-align: center;
+    font-size: 34px;
+    font-family: OpenSansRegular;
+    margin-bottom: 56px;
+}
+.caption_advanteges{
+    font-family: OpenSansRegular;
+}
+.card_advanteges{
+    text-align: center;
+}
+
+/*Our_partners*/
+.our_partners{
+    background-color: #F9F9F9;
+    padding-top: 64px;
+    padding-bottom: 100px;
+}
+.title_partners{
+    text-align: center;
+    font-size: 34px;
+    font-family: OpenSansRegular;
+    margin-bottom: 56px;
+}
+
+/*Bottom footer*/
+.bottom{
+    background-color: #E3E3E3;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+.bottom_referal{
+    font-family: OpenSansSemiBold;
+    padding: 0px;
+    margin-bottom: 18px;
+}
+.conf_politic{
+    font-size: 11px;
+    font-family: OpenSansRegular;
+    color: #979797;
+    text-decoration: none;
+}
+.conf_politic:hover{
+    text-decoration: none;
 }
