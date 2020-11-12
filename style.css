@@ -3,11 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
 }
+/* Нужны ли они?Другой ведь шрифт в исходниках...*/
 /*OpenSansBold*/
 @font-face{
     font-family: OpenSansBold;
     src: url(./fonts/OpenSans-Bold.ttf);
-    
 }
 /*OpenSansCondBold*/
 @font-face{
@@ -129,6 +129,91 @@
     text-decoration: underline;
     background-color: transparent;
 }
+
+/*Carusel header*/
+.carusel_padding{    
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+    border: 1px solid #B3B3B3;
+    margin:0px 10px;
+    background-color: #FAFAFC;
+}
+.carousel-indicators .active {
+    background-color: #D0D0D0;
+}
+.carousel-control-next-icon {
+    background-image: url(./icons_carusel/prav.png);
+}
+.carousel-control-prev-icon {
+    background-image: url(./icons_carusel/lev.png);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 22px;
+    height: 40px;
+    
+}
+.carusel_bg_1st,.carusel_bg_2th,.carusel_bg_3th,.carusel_bg_4th,.carusel_bg_5th{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1366px;
+    height: 456px;
+}
+.carusel_bg_1st{
+    background-image: url(./images/slider_top/zemlya.png);
+}
+.carusel_bg_2th{
+    background-image: url(./images/slider_top/poroshok.png);
+}
+.carusel_bg_3th{
+    background-image: url(./images/slider_top/main.png);
+}
+.carusel_bg_4th{
+    background-image: url(./images/slider_top/piramida.png);
+}
+.carusel_bg_5th{
+    background-image: url(./images/slider_top/obrezki.png);
+}
+.carousel-indicators {
+    right: revert;
+    bottom: 15px;
+    left: 45px;
+}
+.carusel_topic{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 45%;
+    left: 225px;
+    bottom: 115px;
+    padding: 20px 40px;
+}
+.carusel_title_top{
+    color: black;
+    font-family: OpenSansBold;
+    font-size: 30px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.carusel_caption_top{
+    font-family: OpenSansRegular;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+}
+.carousel-control-next {
+    justify-content: center;
+    opacity: 1;
+}
+.carousel-control-prev {
+    justify-content: center;
+    opacity: 1;
+}
+
 
 /*About*/
 .title_about{

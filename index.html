@@ -14,8 +14,8 @@
 </head>
 <body>
     <!--done-->
-    <header class="upper content_sizing">
-        <div class="container">
+    <header class="upper">
+        <div class="container content_sizing">
             <div class="row">
                 <div class="col-lg-12 top_section">
                         <!--logo-->
@@ -54,18 +54,64 @@
         </div>
     </header>
     <!-- сделать карусель-->
-    <section class="carusel_section content_sizing">
-        <div class="container">
+    <section class="carusel_section">
+        <div class="container-fluid">            
             <div class="row">
-                <div class="col-lg-12">
-                    carusel
+                
+                <div class="col-lg-12 carusel_padding">
+                        <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carusel_bg_1st d-block w-100"></div>                                    
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carusel_bg_2th d-block w-100"></div>                                   
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carusel_bg_3th d-block w-100"></div>                                    
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carusel_bg_4th d-block w-100"></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carusel_bg_5th d-block w-100"></div>            
+                                </div>
+                                <div class="carusel_topic ">
+                                    <h3 class="carusel_title_top">
+                                        В стремлении к совершенству
+                                    </h3>
+                                    <p class="carusel_caption_top ">
+                                        Многолетний опыт исследований и производства, 
+                                        позволяют нам удовлетворить 
+                                        любые запросы заказчика и внести свой вклад в успех наших клиентов.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        
                 </div>
             </div>
         </div>
     </section>
     <!--done-->
-    <section class="topic_about content_sizing">
-        <div class="container">
+    <section class="topic_about">
+        <div class="container content_sizing">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="title_about">
@@ -82,8 +128,8 @@
         </div>
     </section>
     <!--done-->
-    <section class="our_product content_sizing">
-        <div class="container">
+    <section class="our_product">
+        <div class="container content_sizing">
             <!--title-->
             <div class="row">
                 <div class="col-lg-12" id="Products">
@@ -312,9 +358,9 @@
             </div>
         </div>
     </section>
-    <!--поченить свгшки-->
-    <section class="our_advantages content_sizing">
-        <div class="container">
+    <!--done-->
+    <section class="our_advantages">
+        <div class="container content_sizing">
             <div class="row">
                 <div class="col-lg-12">
                     <h3 class="title_of_advantages">Преимущества</h3>
@@ -360,8 +406,8 @@
         </div>
     </section>
     <!--сделать карусель-->
-    <section class="our_partners content_sizing">
-        <div class="container">
+    <section class="our_partners">
+        <div class="container content_sizing">
             <div class="row">
                 <div class="col-lg-12">
                     <h3 class="title_partners">Наши заказчики</h3>
@@ -374,9 +420,9 @@
             </div>
         </div>
     </section>
-    <!--вроде готов,якоря,глянуть как с тз-->
-    <footer class="bottom content_sizing">
-        <div class="container">
+    <!--sprites-->
+    <footer class="bottom">
+        <div class="container content_sizing">
             <div class="row navi_bar_bottom">
                 <div class="col-lg-3">
                     <div class="brand" href="#">
