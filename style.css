@@ -3,42 +3,32 @@
     margin: 0px;
     box-sizing: border-box;
 }
-/* Нужны ли они?Другой ведь шрифт в исходниках...*/
-/*OpenSansBold*/
-@font-face{
-    font-family: OpenSansBold;
-    src: url(./fonts/OpenSans-Bold.ttf);
-}
-/*OpenSansCondBold*/
-@font-face{
-    font-family: OpenSansCondBold;
-    src: url(./fonts/OpenSans-CondBold.ttf); 
-}
-/*OpenSansCondLight*/
-@font-face{
-    font-family: OpenSansCondLight;
-    src: url(./fonts/OpenSans-CondLight.ttf); 
-}
-/*OpenSansCondLightItalic*/
-@font-face{
-    font-family: OpenSansCondLightItalic;
-    src: url(./fonts/OpenSans-CondLightItalic.ttf); 
-}
-/*OpenSansRegular*/
-@font-face{
-    font-family: OpenSansRegular;
-    src: url(./fonts/OpenSans-Regular.ttf); 
-}
-/*OpenSansSemiBold*/
-@font-face{
-    font-family: OpenSansSemiBold;
-    src: url(./fonts/open-sans-semibold_[allfont.ru].ttf); 
-}
-/*OpenSansSemiBoldItalic*/
-@font-face{
-    font-family: OpenSansSemiBoldItalic;
-    src: url(./fonts/open-sans-semibold-italic.ttf); 
-}
+/*Шрифты по макету*/
+/* 
+OpenSans Light
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+
+OpenSans Bold
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+
+Roboto Light
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+
+Roboto Regular
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+
+Roboto Medium
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+
+Roboto Bold
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+*/
 
 /*Content sizing*/
 .content_sizing{
@@ -50,18 +40,21 @@
 .top_section{
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 30px;
 }
 .kompozit_logo{
-    font-family: OpenSansBold;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     font-size: 30px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: #00AEEF;
     margin: 0px;
-    transform: matrix(1.05, 0, 0, 1, 0, 0);
+    transform: matrix(1.05, 0, 0, 0.98, 0, 0);
+    padding-left: 2px;
 }
 .logo_under{
-    font-family: OpenSansRegular; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 11px;
     color: #000000;
     margin: 0px;
@@ -71,7 +64,8 @@
 }
 .nav-link{
     text-transform: uppercase;
-    font-family: OpenSansRegular;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: black;
     font-size: 14px;
     padding: .5rem 1.6rem;
@@ -93,9 +87,13 @@
     transition: 0.5s;
 }
 .number{
-    font-family: OpenSansBold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
 }
 .dropdown-menu{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     margin-top: 8px;
     padding: 16px;
     border: none;
@@ -181,26 +179,28 @@
 }
 .carousel-indicators {
     right: revert;
-    bottom: 15px;
-    left: 45px;
+    bottom: 45px;
+    left: 0px;
 }
 .carusel_topic{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
     width: 45%;
-    left: 225px;
+    left: 160px;
     bottom: 115px;
-    padding: 20px 40px;
+    padding: 24px 42px;
 }
 .carusel_title_top{
     color: black;
-    font-family: OpenSansBold;
     font-size: 30px;
     margin-bottom: 24px;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 .carusel_caption_top{
-    font-family: OpenSansRegular;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: black;
     text-align: justify;
     font-size: 20px;
@@ -218,26 +218,28 @@
 /*About*/
 .title_about{
     text-align: center;
-    font-size: 34px;
-    font-family: OpenSansRegular;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin-top: 94px;
     margin-bottom: 52px;
 }
 .description_about{
-    text-indent: 16px;
-    font-family: OpenSansRegular;
+    text-indent: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin-bottom: 98px;
+    padding: 0px 16px;
+    font-size: 18px;
 }
 
 /*Our_product*/
 .title_our_product{
     text-align: center;
-    font-size: 34px;
-    font-family: OpenSansRegular;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin-bottom: 56px;
-}
-.container_cards{
-    margin-bottom: 36px;
 }
 .card_product{
     text-align: center;
@@ -248,11 +250,12 @@
 }
 .title_of_card{
     margin-bottom: 18px;
-    font-family: OpenSansSemiBold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 18px;
 }
 .area_of_card{
-    height: 45%;
+    height: 35%;
     border: 1px solid #B7B7B7;
     padding: 26px;
     display: flex;
@@ -261,7 +264,7 @@
     align-items: center;
 }
 .card_with_back_small{
-    height: 97%;
+    height: 87%;
     border: 1px solid black;
     padding-left: 50px;
     padding-right: 50px;
@@ -272,7 +275,7 @@
     color: white;
 }
 .card_with_back_large{
-    height: 100%;
+    height: 90%;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 160px;
@@ -287,7 +290,8 @@
     background-color: #00AEEF;
     text-align: center;
     border-radius: .25rem;
-    font-family: OpenSansRegular;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 14px;
     padding: .5rem 1.6rem;
     border: 1px solid  #00AEEF;
@@ -320,6 +324,8 @@
 .overlay_title{
     font-size: 18px;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -331,11 +337,14 @@
 }
 .title_of_advantages{
     text-align: center;
-    font-size: 34px;
-    font-family: OpenSansRegular;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin-bottom: 56px;
 }
 .caption_advanteges{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     padding: 16px;
     font-size: 16px;
 }
@@ -351,29 +360,125 @@
 }
 .title_partners{
     text-align: center;
-    font-size: 34px;
-    font-family: OpenSansRegular;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin-bottom: 56px;
 }
 
+/*Bottom_carusel*/
+.arr_of_img_bott_carusel{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.item_of_bott_carusel{
+    background-color: #fff;
+    width: 144px;
+    height: 125px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.control_bottom_prev, .control_bottom_next {
+    bottom: 10px;
+}
+.control_bottom_prev{
+    left: -40px;
+}
+.control_bottom_next {
+    right: -40px;
+}
+.item_faded{
+    display: none;
+}
+.item_of_bott_carusel:hover .item_unfaded{
+    display: none;
+    transition: 1s;
+}
+.item_of_bott_carusel:hover .item_faded{
+    display: block;
+    transition: 1s; 
+}
+
 /*Bottom footer*/
+.bottom_logo{
+    padding-left: 5px;
+}
 .bottom{
     background-color: #E3E3E3;
-    padding-top: 32px;
-    padding-bottom: 24px;
+    padding-top: 58px;
+    padding-bottom: 29px;
+}
+.navi_bar_bottom{
+    margin-bottom: 14px;
+}
+.container_referal_bottom{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 .bottom_referal{
-    font-family: OpenSansSemiBold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     padding: 0px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
+}
+.bottom_referal_phones{
+    font-size: 18px;
 }
 .conf_politic{
     font-size: 11px;
-    font-family: OpenSansRegular;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color: #979797;
     text-decoration: none;
 }
 .conf_politic:hover{
     text-decoration: none;
     transition: 0.5s;
+}
+
+/*Bottom_sprites*/
+.sprites{
+    background-image: url(./sprites/full_set.png);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    transition: all 0.2s ease-out;
+}
+.facebook{
+    background-position: left bottom;
+}
+.facebook:hover{
+    background-position: left top;
+}
+.vkontakte{
+    background-position: -32px bottom;
+}
+.vkontakte:hover{
+    background-position: -32px top;
+}
+.odnoklassniki{
+    background-position: -62px bottom;
+}
+.odnoklassniki:hover{
+    background-position: -62px top;
+}
+.youtube{
+    background-position: -92px bottom;
+}
+.youtube:hover{
+    background-position: -92px top;
+}
+.instagramm{
+    background-position: -122px bottom;
+}
+.instagramm:hover{
+    background-position: -122px top;
 }
