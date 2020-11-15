@@ -127,6 +127,9 @@ font-weight: 700;
     text-decoration: underline;
     background-color: transparent;
 }
+.navbar{
+    display: none;
+}
 
 /*Carusel header*/
 .carusel_padding{    
@@ -184,7 +187,7 @@ font-weight: 700;
 }
 .carusel_topic{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7); 
     width: 45%;
     left: 160px;
     bottom: 115px;
@@ -482,4 +485,75 @@ font-weight: 700;
 }
 .instagramm:hover{
     background-position: -122px top;
+}
+
+@media (min-width: 2560px){
+    .carusel_topic {
+        width: 30%;
+        left: 725px; 
+    }
+    .carousel-indicators {
+        right: 800px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 53%;
+    }
+}
+@media (max-width: 1024px){
+    .carusel_topic {
+        padding: 5px 20px;
+    }
+}
+@media (max-width: 996px){
+    .menu,.upper_brand{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+        display: block;
+        padding: 0px 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top_section {
+        padding: 0;
+    }
+    .carusel_topic {
+        width: 80%;
+        left: 55px;
+        bottom: 115px;
+        padding: 24px 42px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .arr_of_img_bott_carusel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card_product {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .navi_bar_bottom {
+        text-align: center;
+    }
+    .bottom_logo_container{
+        margin-bottom: 24px;
+    }
+    .conf_politic{
+        text-align: right;
+    }
+}
+@media (max-width: 996px){
+    .carusel_topic {
+        padding: 0px 15px;
+    }
+    .card_product {
+        width: 80%;
+    }
 }

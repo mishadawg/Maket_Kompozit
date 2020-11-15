@@ -20,14 +20,15 @@
 <body>
     <!--done-->
     <header class="upper">
-        <div class="container content_sizing">
+        <div class="container-fluid content_sizing">
             <div class="row">
                 <div class="col-lg-12 top_section">
                         <!--logo-->
-                        <div class="brand">
+                        <div class="brand upper_brand">
                             <p class="kompozit_logo">KOMPOZIT</p>
                             <p class="logo_under">Scientific and production enterprise</p>
                         </div>
+
                         <!--menu-->
                         <nav class="menu">
                             <ul class="nav nav-pills nav-fill">
@@ -54,11 +55,49 @@
                                 </li>
                               </ul>
                         </nav>
+
+                        <!--menu burger-->
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                            <div class="navbar-brand brand">
+                                <p class="kompozit_logo">KOMPOZIT</p>
+                                <p class="logo_under">Scientific and production enterprise</p>
+                            </div>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                              <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown link
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+
+                        </nav>
                 </div>
             </div>
         </div>
     </header>
-    <!--done,вроде бы да,но контент не 1200px-->
+    <!--done-->
     <section class="carusel_section">
         <div class="container-fluid">            
             <div class="row">
@@ -490,7 +529,7 @@
         <div class="container content_sizing">
             <div class="row navi_bar_bottom">
                 <div class="col-lg-3">
-                    <div class="brand">
+                    <div class="brand bottom_logo_container">
                         <p class="kompozit_logo bottom_logo">KOMPOZIT</p>
                         <p class="logo_under">Scientific and production enterprise</p>
                     </div>
@@ -510,14 +549,14 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 container_sprites">
                     <a href="#" class="sprites facebook"></a>
                     <a href="#" class="sprites vkontakte"></a>
                     <a href="#" class="sprites odnoklassniki"></a>
                     <a href="#" class="sprites youtube"></a>
                     <a href="#" class="sprites instagramm"></a>
                 </div>
-                <div class="col-lg-3 ml-auto">
+                <div class="col-lg-3 ml-auto conf_politic">
                     <a class="conf_politic" href="/">Политика конфиденциальности</a>
                 </div>
             </div>
