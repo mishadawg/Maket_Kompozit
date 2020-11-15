@@ -178,7 +178,7 @@ font-weight: 700;
     background-image: url(./images/slider_top/obrezki.png);
 }
 .carousel-indicators {
-    right: revert;
+    right: auto;
     bottom: 45px;
     left: 0px;
 }
@@ -395,6 +395,7 @@ font-weight: 700;
 .item_faded{
     display: none;
 }
+
 .item_of_bott_carusel:hover .item_unfaded{
     display: none;
     transition: 1s;
